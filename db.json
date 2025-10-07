@@ -1,0 +1,117 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Book A",
+      "price": 120,
+      "imageUrl": "https://picsum.photos/200/300?random=1",
+      "category": "Novel",
+      "inStock": true,
+      "description": "A fascinating novel that captures emotions and deep stories."
+    },
+    {
+      "id": 2,
+      "name": "Book B",
+      "price": 200,
+      "imageUrl": "https://picsum.photos/200/300?random=2",
+      "category": "Science",
+      "inStock": false,
+      "description": "An insightful science book explaining complex theories simply."
+    },
+    {
+      "id": 3,
+      "name": "Book C",
+      "price": 150,
+      "imageUrl": "https://picsum.photos/200/300?random=3",
+      "category": "History",
+      "inStock": true,
+      "description": "Dive into history with well-documented and engaging narratives."
+    },
+    {
+      "id": 4,
+      "name": "Book D",
+      "price": 180,
+      "imageUrl": "https://picsum.photos/200/300?random=4",
+      "category": "Fantasy",
+      "inStock": true,
+      "description": "An epic fantasy adventure filled with magic and heroes."
+    },
+    {
+      "id": 5,
+      "name": "Book E",
+      "price": 90,
+      "imageUrl": "https://picsum.photos/200/300?random=5",
+      "category": "Comic",
+      "inStock": false,
+      "description": "A fun comic book with humorous and exciting stories."
+    },
+    {
+      "id": 6,
+      "name": "Book F",
+      "price": 250,
+      "imageUrl": "https://picsum.photos/200/300?random=6",
+      "category": "Romance",
+      "inStock": true,
+      "description": "A heartwarming romance story that touches the soul."
+    },
+    {
+      "id": 7,
+      "name": "Book G",
+      "price": 300,
+      "imageUrl": "https://picsum.photos/200/300?random=7",
+      "category": "Technology",
+      "inStock": true,
+      "description": "A modern technology guide covering innovations and trends."
+    },
+    {
+      "id": 8,
+      "name": "Book H",
+      "price": 110,
+      "imageUrl": "https://picsum.photos/200/300?random=8",
+      "category": "Philosophy",
+      "inStock": false,
+      "description": "Philosophical ideas explained in an accessible way."
+    },
+    {
+      "id": 9,
+      "name": "Book I",
+      "price": 160,
+      "imageUrl": "https://picsum.photos/200/300?random=9",
+      "category": "Biography",
+      "inStock": true,
+      "description": "The inspiring life story of a famous person."
+    },
+    {
+      "id": 10,
+      "name": "Book J",
+      "price": 210,
+      "imageUrl": "https://picsum.photos/200/300?random=10",
+      "category": "Education",
+      "inStock": true,
+      "description": "An educational resource for students and teachers."
+    },
+    {
+      "id": 11,
+      "name": "iPhone 14",
+      "price": 1111,
+      "imageUrl": "a.jpg",
+      "category": "ab",
+      "inStock": true,
+      "description": "Latest iPhone model with advanced features and sleek design."
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin @gmail.com",
+      "password": "123456"
+    },
+    {
+      "email": "vinh1234@gmail.com",
+      "password": "$2a$10$eMojcLsHP78q.MQ3PypT8uYSo0McqY5Xg5eGwuOFAZGVMXX7AyVd.",
+      "username": "vinh1234@gmail.com",
+      "id": 2
+    }
+  ]
+}

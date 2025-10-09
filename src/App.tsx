@@ -1,26 +1,34 @@
-import { Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
-import List from "./pages/List";
-import Add from "./pages/Add";
-import Edit from "./pages/Edit";
-import ProductDetail from "./pages/ProductDetail";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
+import { Routes, Route, Navigate } from "react-router-dom";
+import AdminLayout from "./pages/layout/AdminLayout";
+import Dashboard from "./pages/admin/Dashboard";
+import Add from "./pages/admin/Add";
+import Edit from "./pages/admin/Edit";
+import ClientLayout from "./pages/layout/ClientLayout"
+import List from "./pages/client/List";
+import ProductDetail from "./pages/client/ProductDetail";
+import Login from "./pages/client/Login";
+import Register from "./pages/client/Register";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
-        {/* Các trang con của Layout */}
-        <Route index element={<h2>Chào mừng đến Trang chủ</h2>} />
+      {/* Client */}
+      <Route path="/" element={<ClientLayout />}>
+        <Route index element={<h2>Chào mừng đến Koparion 📚</h2>} />
         <Route path="list" element={<List />} />
-         <Route path="/products/:id" element={<ProductDetail />} />
-        <Route path="add" element={<Add />} />
-        <Route path="edit/:id" element={<Edit />} />
+        <Route path="products/:id" element={<ProductDetail />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
-        {/* Bạn có thể thêm các route khác ở đây */}
       </Route>
+
+      {/* Admin */}
+      <Route path="/admin" element={<AdminLayout />}>
+        <Route index element={<Dashboard />} />
+        <Route path="add" element={<Add />} />
+        <Route path="edit/:id" element={<Edit />} />
+      </Route>
+
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }

@@ -3,7 +3,8 @@ import AdminLayout from "./pages/layout/AdminLayout";
 import Dashboard from "./pages/admin/Dashboard";
 import Add from "./pages/admin/Add";
 import Edit from "./pages/admin/Edit";
-import ClientLayout from "./pages/layout/ClientLayout"
+import ProductList from "./pages/admin/ProductList";
+import ClientLayout from "./pages/layout/ClientLayout";
 import List from "./pages/client/List";
 import ProductDetail from "./pages/client/ProductDetail";
 import Login from "./pages/client/Login";
@@ -24,10 +25,12 @@ function App() {
       {/* Admin */}
       <Route path="/admin" element={<AdminLayout />}>
         <Route index element={<Dashboard />} />
+        <Route path="products" element={<ProductList />} />
         <Route path="add" element={<Add />} />
         <Route path="edit/:id" element={<Edit />} />
       </Route>
 
+      {/* Redirect */}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
